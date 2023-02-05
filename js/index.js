@@ -1,12 +1,16 @@
-const burger = document.querySelector(".burger");
+const menu = document.querySelector('.menu')
+
+const burger = document.querySelector('.burger')
+
 
 function showMenu() {
-  burger.onсlick = function () {
-    burger.classList.toggle("burgerActive");
-  };
+    burger.onclick = function() {
+        menu.classList.toggle('menuActive')
+        burger.classList.toggle('burgerActive')
+    }
 }
 
-showMenu();
+showMenu()
 
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 30,
