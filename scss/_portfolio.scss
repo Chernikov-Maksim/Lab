@@ -1,0 +1,109 @@
+.portfolio {
+    background-image: url(../img/portfolio/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-attachment: fixed;
+
+    .wrapper {
+        @media (max-width: 1280px) {
+            padding: 0em 1em;
+        }
+
+        @media (max-width: 1100px) {
+            padding: 0em 1em;
+            font-size: 14px;
+        }
+
+        @media (max-width: 992px) {
+            padding: 0em 1em;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 0em 1em;
+            font-size: 10px;
+        }
+
+        @media (max-width: 568px) {
+            padding: 0em 1em;
+        }
+
+        @media (max-width: 320px) {
+            padding: 0em 1em;
+        }
+
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .container {
+
+            .title {
+              
+                margin-top: 3.125em;
+                display: flex;
+                justify-content: center;
+
+                h2 {
+                    padding: 0.263158em 0.36842em;
+                    border: 1.2px solid #FF9983;
+                    filter: blur(0.1px);
+                    box-shadow: 0px 0px 5px 1px #FF0000;
+                    border-radius: 0.263158em;
+                    display: inline-block;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 2.374em;
+                    text-transform: uppercase;
+                }
+            }
+
+            .row {
+                @media (max-width: 1100px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @media (max-width: 360px) {
+                    grid-row-gap: 10px;
+                    margin-top: 25px;
+                }
+
+                margin-top: 3.125em;
+                display: grid;
+                grid-column-gap: 5.625em;
+                grid-row-gap: 2.5em;
+                grid-template-columns: repeat(2, 1fr);
+
+                .column {
+                    display: flex;
+                    flex-direction: column;
+
+                    img {
+                        @media (max-width: 360px) {
+                            width: 100%;
+
+                        }
+
+                        border-radius: 0.9375em;
+                        width: 35.3125em;
+                        height: 19.375em;
+                        margin-bottom: 1.875em;
+                    }
+
+                    p {
+                        @media (max-width: 360px) {
+                            width: 100%;
+                        }
+
+                        font-weight: 400;
+                        font-size: 1em;
+                        line-height: 1.25em;
+                        width: 33em;
+                    }
+                }
+            }
+
+        }
+    }
+}
